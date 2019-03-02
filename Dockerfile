@@ -4,7 +4,7 @@ MAINTAINER AK141
 ARG USER="ak141"
 ARG UID="1000"
 ARG GID="1000"
-ARG PASS="######"
+ARG PASS="as_you_like"
 
 USER root
 
