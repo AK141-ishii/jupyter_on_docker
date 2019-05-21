@@ -50,7 +50,8 @@ RUN set -x && \
     && echo '{"theme":"JupyterLab Dark"}' > /home/ak141/.jupyter/lab/user-settings/@jupyterlab/apputils-extension/themes.jupyterlab-settings \
 # Install Library
     && conda install -y pystan \
-    && pip install flake8 optuna graphviz xgboost lightgbm
+    && pip install flake8 optuna graphviz xgboost lightgbm tensorflow keras\
+    && pip install -U scikit-learn
 
 RUN chmod 731 /home/${USER}/.config
 EXPOSE 8888:8888
