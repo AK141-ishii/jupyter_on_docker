@@ -1,0 +1,14 @@
+"##### general config #####
+set fenc=utf-8
+set tabstop=4
+
+"SHOW
+set number
+set cursorline
+set title
+set showmatch
+syntax on
+set smartindent
+colorscheme molokai
+set background=dark
+
