@@ -5,14 +5,14 @@ dockerfile for "jupyter_on_docker"
 
 base : jupyter/tensorflow-notebook
 
-+ apt
+**+ apt**  
 vim, build-essential
 
-+ conda
+**+ conda**  
 pystan, flake8, lightgbm, pytest
 
-+ JupyterLab Extension
+**+ JupyterLab Extension**  
 jupyterlab_vim, theme:JupyterLab Dark
 
-+ some settings
+**+ some settings**  
 bashrc, vim, gitconfig
