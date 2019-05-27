@@ -16,6 +16,9 @@ RUN conda update conda \
     lightgbm \
     pytest \
     && conda update --all -y
+    
+RUN pip install japanize-matplotlib \
+    && pip install scipy==1.2 --upgrade
 
 RUN jupyter labextension install jupyterlab_vim \
     && mkdir -p /home/${NB_USER}/.jupyter/lab/user-settings/@jupyterlab/apputils-extension \
