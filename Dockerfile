@@ -22,6 +22,7 @@ RUN pip install japanize-matplotlib \
 
 RUN jupyter labextension install jupyterlab_vim \
     && mkdir -p /home/${NB_USER}/.jupyter/lab/user-settings/@jupyterlab/apputils-extension \
+    && mkdir -p /home/${NB_USER}/.jupyter/lab/user-settings/@jupyterlab/codemirror-extension \
     && echo '{"theme":"JupyterLab Dark"}' > /home/${NB_USER}/.jupyter/lab/user-settings/@jupyterlab/apputils-extension/themes.jupyterlab-settings \
     && echo '{"keyMap":"vim"}' > /home/${NB_USER}/.jupyter/lab/user-settings/@jupyterlab/codemirror-extension/commands.jupyterlab-settings
     
