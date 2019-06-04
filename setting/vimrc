@@ -1,19 +1,44 @@
 "##### general config #####
+set nocompatible
 set fenc=utf-8
 
-set expandtab
+set autoindent
 set shiftwidth=2
 set tabstop=2
-set autoindent
-
+set expandtab
 
 "SHOW
 set number
+set ruler
 set cursorline
+set cursorcolumn
 set title
 set showmatch
 syntax on
 set smartindent
 colorscheme molokai
 set background=dark
+
+"SEARCH
+set ignorecase
+set wrapscan
+
+"CURSOR MOVE
+set backspace=indent,eol,start
+set scrolloff=8
+set sidescrolloff=16
+set sidescroll=1
+set whichwrap=b,s,h,l,<,>,[,]
+
+"ENV
+set iminsert=2
+set shellslash
+set mouse=a
+map <ScrollWheelUp> <>
+map <ScrollWheelDown> <>
+
+"BEEP
+set visualbell t_vb=
+set noerrorbells
+
 
